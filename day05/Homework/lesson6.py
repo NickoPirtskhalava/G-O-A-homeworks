@@ -35,13 +35,13 @@ fav_car = input("შეიყვანეთ თქვენი საყვა�
 hobby1 = input("შეიყვანეთ თქვენი 1-ლი საყვარელი ჰობი: ")
 hobby2 = input("შეიყვანეთ თქვენი მე-2 საყვარელი ჰობი: ")
 hobby3 = input("შეიყვანეთ თქვენი მე-3 საყვარელი ჰობი: ")
-
 print("მე ვარ " + name + " " + surname + ", ჩემი მშობლები არიან " + parent_name + " " + parent_surname + ". ჩემი საყვარელი ფერია " + fav_color + ", საყვარელი მანქანაა " + fav_car + ", და ჩემი ჰობია " + hobby1 + ", " + hobby2 + " და " + hobby3 + ".")
+
+
 
 # 5)
 two_digit_number_str = input("შეიყვანეთ ორნიშნა რიცხვი (მაგ. 23): ")
 two_digit_number = int(two_digit_number_str)
-
 
 digit1 = two_digit_number // 10
 digit2 = two_digit_number % 10
