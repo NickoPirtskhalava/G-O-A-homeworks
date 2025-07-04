@@ -1,0 +1,30 @@
+body {
+  background-color: #0d0d0d;
+  font-family: Arial, sans-serif;
+  padding: 30px;
+  color: white;
+}
+
+.title {
+  text-align: center;
+  color: rgb(255, 165, 0);
+}
+
+.car-image {
+  display: block;
+  margin: 20px auto;
+  width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(255, 165, 0, 0.5);
+}
+
+.description {
+  background-color: #1a1a1a;
+  color: #00ffff;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: auto;
+}

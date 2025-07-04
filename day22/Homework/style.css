@@ -1,0 +1,15 @@
+table {
+    border-collapse: collapse;
+    margin: 20px;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px 12px;
+    text-align: center;
+}
+
+.outer {
+    border: 3px solid #999;
+    box-shadow: 4px 4px 8px #aaa;
+}

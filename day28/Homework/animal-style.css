@@ -1,0 +1,35 @@
+body {
+  background-color: #f0f8ff;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.animal {
+  margin-bottom: 30px;
+}
+
+img {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.lion {
+  color: goldenrod;
+}
+
+.dog {
+  color: brown;
+}
+
+.cat {
+  color: purple;
+}
+
+.elephant {
+  color: gray;
+}
+
+.panda {
+  color: black;
+}

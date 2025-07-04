@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>სარეგისტრაციო ფორმა</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #f0f8ff;
+      padding: 30px;
+    }
+    form {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      width: 300px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .gender-group {
+      margin-top: 10px;
+    }
+    .gender-group label {
+      display: inline-block;
+      margin-right: 10px;
+    }
+    input[type="submit"] {
+      margin-top: 20px;
+      width: 100%;
+      padding: 10px;
+      background-color: darkblue;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: navy;
+    }
+  </style>
+</head>
+<body>
+
+  <form action="/submit" method="post">
+    <h2 style="text-align: center;">რეგისტრაცია</h2>
+
+    <label for="firstName">სახელი:</label>
+    <input type="text" id="firstName" name="first_name" required>
+
+    <label for="lastName">გვარი:</label>
+    <input type="text" id="lastName" name="last_name" required>
+
+    <label for="email">ემაილი:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="password">პაროლი:</label>
+    <input type="password" id="password" name="password" required>
+
+    <label>Gender:</label>
+    <div class="gender-group">
+      <label for="male">
+        <input type="radio" id="male" name="gender" value="male" required> მამრობითი
+      </label>
+      <label for="female">
+        <input type="radio" id="female" name="gender" value="female"> მდედრობითი
+      </label>
+      <label for="other">
+        <input type="radio" id="other" name="gender" value="other"> სხვა
+      </label>
+    </div>
+
+    <input type="submit" value="დადასტურება">
+  </form>
+
+</body>
+</html>
