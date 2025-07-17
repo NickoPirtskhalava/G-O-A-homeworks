@@ -1,0 +1,37 @@
+body {
+  font-family: sans-serif;
+  background-color: #f0f8ff;
+}
+
+h1 {
+  text-align: center;
+  color: darkred;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.left, .center, .right {
+  width: 30%;
+  padding: 15px;
+  box-sizing: border-box;
+  min-height: 200px;
+}
+
+.left {
+  background-color: #ffe4e1;
+  text-align: left;
+}
+
+.center {
+  background-color: #fffacd;
+  text-align: center;
+}
+
+.right {
+  background-color: #e0ffff;
+  text-align: right;
+}

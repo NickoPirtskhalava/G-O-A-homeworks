@@ -1,0 +1,97 @@
+<style>
+    /* 1 */
+    .container {
+  display: flex; /* Flexbox-ს აქტიურობს მშობელ ელემენტზე */
+  
+  flex-direction: row; /* ელემენტები განლაგდება ჰორიზონტალურად (row) ან ვერტიკალურად (column) */
+  
+  justify-content: center; 
+  /* მთავარი ღერძის გასწვრივ ელემენტების განლაგება:
+     - flex-start: მარცხნივ
+     - center: ცენტრში
+     - flex-end: მარჯვნივ
+     - space-between: სივრცე ელემენტებს შორის
+     - space-around: სივრცე ელემენტების გარშემო
+     - space-evenly: თანაბარი სივრცე */
+
+  align-items: center; 
+  /* ჯვარედინი ღერძის გასწვრივ ელემენტების განლაგება:
+     - stretch: გაწელვა (ნაგულისხმევი)
+     - center: ცენტრში
+     - flex-start / flex-end: ზემოთ / ქვემოთ */
+
+  flex-wrap: wrap; 
+  /* თუ ელემენტები არ ეტევა, გადავიდეს ახალ ხაზზე:
+     - nowrap: არ გადადის (ნაგულისხმევი)
+     - wrap: გადადის ახალ ხაზზე */
+
+  gap: 20px; 
+  /* ელემენტებს შორის სივრცე */
+
+  align-content: center; 
+  /* როცა რამდენიმე ხაზი გვაქვს, ვაკონტროლებთ ხაზების განლაგებას ჯვარედინი ღერძზე */
+}
+
+
+
+/* 3 */
+
+/* CSS Box Model აღწერს, როგორ არის HTML ელემენტი განლაგებული და როგორია მისი სივრცე */
+
+/* 1. Content (შიგთავსი):
+   ეს არის ელემენტის შიგნით არსებული შინაარსი — ტექსტი, სურათი და სხვა. */
+
+/* 2. Padding (შიდა სივრცე):
+   სივრცე შიგთავსსა და border-ს შორის.
+   padding ზრდის ელემენტის შიდა ზომას და აშორებს შიგთავსს საზღვრისგან.
+   padding გამჭვირვალეა. */
+
+/* 3. Border (საზღვარი):
+   ხაზოვანი საზღვარი, რომელიც გარს არტყამს padding-სა და შიგთავსს.
+   მას აქვს სისქე, ფერი და სტილი (მაგ. solid, dashed).
+   border იკავებს სივრცეს და ჩანს ვიზუალურად. */
+
+/* 4. Margin (გარე სივრცე):
+   სივრცე ელემენტის გარშემო, რომელიც აშორებს მას სხვა ელემენტებისგან.
+   margin გამჭვირვალეა და არ შედის ელემენტის ზომაში. */
+
+/* სრული Box Model შედგება: margin + border + padding + content */
+</style>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flex Layout</title>
+  <style>
+    .container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 100vh;
+      background-color: #e0f7fa;
+    }
+
+    .box {
+      width: 150px;
+      height: 150px;
+      background-color: #00796b;
+      color: white;
+      font-size: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="box">ბლოკი 1</div>
+    <div class="box">ბლოკი 2</div>
+    <div class="box">ბლოკი 3</div>
+  </div>
+
+</body>
+</html>

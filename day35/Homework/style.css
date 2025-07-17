@@ -1,0 +1,89 @@
+/* :hover — როცა მაუსს მივიტანთ ელემენტზე
+a:hover {
+  color: red;
+}
+
+/* :active — როცა ელემენტზე ვაჭერთ 
+button:active {
+  background-color: gray;
+}
+
+/* :visited — როცა ლინკი უკვე ნანახია 
+a:visited {
+  color: purple;
+}
+
+/* :focus — როცა ელემენტი აქტიურია (მაგ. input-ში კურსორი) 
+input:focus {
+  border: 2px solid blue;
+}
+
+/* :first-child — პირველი შვილი ელემენტი 
+p:first-child {
+  color: green;
+}
+
+/* :last-child — ბოლო შვილი ელემენტი 
+p:last-child {
+  color: orange;
+}
+
+/* :nth-child(n) — კონკრეტული რიგის შვილი ელემენტი 
+li:nth-child(2) {
+  font-weight: bold;
+}
+
+/* :nth-child(odd) — ყველა კენტი ელემენტი 
+tr:nth-child(odd) {
+  background-color: blue;
+}
+
+/* :nth-child(even) — ყველა ლუწი ელემენტი 
+tr:nth-child(even) {
+  background-color: red;
+}
+
+/* :not(selector) — ყველა ელემენტი, რომელიც არ აკმაყოფილებს selector-ს 
+div:not(.special) {
+  background-color: lightgray;
+}
+
+/* saiti */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  padding: 30px;
+  color: #333;
+}
+
+nav a {
+  margin-right: 15px;
+  text-decoration: none;
+  color: blue;
+}
+
+nav a:hover {
+  color: red;
+}
+
+nav a:visited {
+  color: purple;
+}
+
+.gallery img {
+  width: 200px;
+  margin: 10px;
+  transition: transform 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.1);
+}
+
+p:nth-child(odd) {
+  background-color: #e0f7fa;
+}
+
+p:nth-child(even) {
+  background-color: #ffe0b2;
+}

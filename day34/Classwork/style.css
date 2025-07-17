@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display&family=Roboto&display=swap');
+
+body {
+  background-color: #f0f0f0;
+  padding: 30px;
+  font-size: 18px;
+  color: #333;
+}
+
+h2 {
+  text-align: center;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+.box1, .box2, .box3 {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
+.pacifico {
+  font-family: 'Pacifico', cursive;
+}
+
+.playfair {
+  font-family: 'Playfair Display', serif;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.overline {
+  text-decoration: overline;
+}
+
+.line-through {
+  text-decoration: line-through;
+}
+
+.shadow {
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}

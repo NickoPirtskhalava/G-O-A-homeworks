@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>რეგისტრაცია</title>
+  <style>
+    body {
+      background-color: #e3f2fd;
+      font-family: sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    form {
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+      width: 300px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #1565c0;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      font-size: 16px;
+      border: 2px solid #90caf9;
+      border-radius: 8px;
+      background-color: #f1f8ff;
+    }
+
+    input:focus {
+      border-color: #1976d2;
+      outline: none;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #1976d2;
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0d47a1;
+    }
+  </style>
+</head>
+<body>
+
+  <form>
+    <h2>რეგისტრაცია</h2>
+    <input type="text" placeholder="სახელი" required>
+    <input type="text" placeholder="გვარი" required>
+    <input type="email" placeholder="იმეილი" required>
+    <button type="submit">გაგზავნა</button>
+  </form>
+
+</body>
+</html>

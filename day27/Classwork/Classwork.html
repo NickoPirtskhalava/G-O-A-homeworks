@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS ტიპები</title>
+
+  <!-- 1 -->
+  <!-- Internal CSS — სტილი წერია <style> თეგში -->
+  <style>
+    /* ეს სტილი შეეხება ყველა <h2> ელემენტს */
+    h2 {
+      color: blue;
+    }
+
+    /* ეს სტილი შეეხება ელემენტებს, რომლებსაც აქვთ class="highlight" */
+    .highlight {
+      background-color: yellow;
+    }
+
+    /* ეს სტილი შეეხება ელემენტს, რომელსაც აქვს id="main-title" */
+    #main-title {
+      font-size: 28px;
+      color: darkgreen;
+    }
+  </style>
+
+  <!-- External CSS — სტილი ცალკე ფაილშია და ერთდება <link> თეგით -->
+  <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<body>
+
+  <!-- Inline CSS — სტილი წერია პირდაპირ ელემენტში -->
+  <h1 style="color: red;">ეს არის Inline სტილით გაფორმებული სათაური</h1>
+
+  <!-- Internal CSS გამოიყენება ამ h2-ზე -->
+  <h2>ეს არის Internal CSS-ით გაფორმებული სათაური</h2>
+
+  <!-- ID სელექტორი გამოიყენება ამ ელემენტზე -->
+  <h2 id="main-title">ეს არის ID სელექტორით გაფორმებული სათაური</h2>
+
+  <!-- კლასის სელექტორი გამოიყენება ამ აბზაცზე -->
+  <p class="highlight">ეს აბზაცი გაფორმებულია class სელექტორით და აქვს ყვითელი ფონი.</p>
+
+
+
+  <!-- 2 css shia :) -->
+   
+</body>
+</html>
