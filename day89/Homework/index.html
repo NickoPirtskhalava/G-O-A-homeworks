@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8" />
+  <title>document</title>
+</head>
+<body>
+
+<!-- 1) კომენტარი addEventListener-ზე -->
+<!-- addEventListener გამოიყენება HTML ელემენტზე კონკრეტული მოვლენის მოსასმენად და შესაბამისი ქმედების შესასრულებლად -->
+
+<!-- 2) რიცხვის გამოცნობა -->
+<input id="userGuess" type="number" placeholder="Enter a number (1–10)" />
+<button id="guessBtn">Guess</button>
+
+<script>
+let secret = 7;
+let input = document.getElementById("userGuess");
+let btn = document.getElementById("guessBtn");
+
+btn.addEventListener("click", () => {
+  let guess = parseInt(input.value);
+  if (guess === secret) {
+    alert("შენ გამოიცანი ჩემი რიცხვი");
+  } else {
+    alert("შენ ვერ გამოიცანი ჩემი რიცხვი");
+  }
+});
+</script>
+
+<!-- 3) სარეგისტრაციო ფორმა -->
+<form id="regForm">
+  <input id="email" placeholder="Email" />
+  <input id="password" placeholder="Password" />
+  <input id="name" placeholder="Name" />
+  <input type="submit" id="submitBtn" />
+</form>
+
+<script>
+document.getElementById("submitBtn").addEventListener("click", (e) => {
+  e.preventDefault();
+  let email = document.getElementById("email").value;
+  let password = document.getElementById("password").value;
+  let name = document.getElementById("name").value;
+  console.log("შენ წარმატებით გაიარე რეგისტრაცია");
+  console.log("მონაცემები:", email, password, name);
+});
+</script>
+
+<!-- 4) დივზე დაკლიკება -->
+<div id="myBox" style="width:100px; height:100px; background:red; border-radius:10px;"></div>
+
+<script>
+let box = document.getElementById("myBox");
+box.addEventListener("click", () => {
+  box.style.width = "200px";
+  box.style.height = "200px";
+  box.style.background = "blue";
+});
+</script>
+
+<!-- 5) 5 მოვლენის მაგალითი -->
+<button id="btn1">Click</button>
+<input id="input1" placeholder="Type something" />
+<div id="hoverBox" style="width:100px; height:100px; background:gray;"></div>
+<button id="dblBtn">Double Click</button>
+<input id="focusInput" placeholder="Focus me" />
+
+<script>
+// 1) click
+document.getElementById("btn1").addEventListener("click", () => {
+  console.log("Clicked!");
+});
+
+// 2) input
+document.getElementById("input1").addEventListener("input", () => {
+  console.log("Typing...");
+});
+
+// 3) mouseover
+document.getElementById("hoverBox").addEventListener("mouseover", () => {
+  console.log("Mouse over box");
+});
+
+// 4) dblclick
+document.getElementById("dblBtn").addEventListener("dblclick", () => {
+  console.log("Double clicked!");
+});
+
+// 5) focus
+document.getElementById("focusInput").addEventListener("focus", () => {
+  console.log("Input focused");
+});
+</script>
+
+</body>
+</html>

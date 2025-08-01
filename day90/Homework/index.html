@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8" />
+  <title>document</title>
+  <style>
+    body { font-family: sans-serif; }
+    #lemonBox {
+      width: 150px;
+      height: 150px;
+      background: yellow;
+      margin: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- 1) მოვლენის მსმენელი -->
+<!-- addEventListener ქმნის კავშირს HTML ელემენტსა და JS ფუნქციას შორის, რათა რეაგირება მოახდინოს კონკრეტულ მოქმედებაზე (მაგ: click, input) -->
+
+<!-- 2) event ბლოკი -->
+<!-- event ბლოკი გვაძლევს ინფორმაციას მიმდინარე მოვლენის შესახებ, მაგალითად event.target გვიჩვენებს რომელ ელემენტზე მოხდა მოქმედება -->
+
+<!-- 3) რეგისტრაცია და თემატური საიტი -->
+<div id="registration">
+  <h3>რეგისტრაცია</h3>
+  <input id="regName" placeholder="სახელი" />
+  <input id="regEmail" placeholder="Email" />
+  <input id="regPass" placeholder="Password" />
+  <button id="regSubmit">Register</button>
+</div>
+
+<div id="mainSite" style="display:none;">
+  <h3>ჩემი საყვარელი თემა: ვიდეო თამაშები</h3>
+  <p>აქ შეგიძლიათ წაიკითხოთ საინტერესო ფაქტები თამაშებზე, ნახოთ სურათები და რჩევები.</p>
+</div>
+
+<script>
+document.getElementById("regSubmit").addEventListener("click", () => {
+  let name = document.getElementById("regName").value;
+  let initials = name.split(" ").map(n => n[0]).join("");
+  console.log("ინიციალები:", initials);
+  document.getElementById("registration").style.display = "none";
+  document.getElementById("mainSite").style.display = "block";
+});
+</script>
+
+<!-- 4) ლიმონის ფორმა -->
+<div id="lemonBox"></div>
+
+<script>
+document.getElementById("lemonBox").addEventListener("click", () => {
+  let box = document.getElementById("lemonBox");
+  box.style.borderRadius = "50%";
+  box.style.width = "200px";
+  box.style.height = "120px";
+});
+</script>
+
+<!-- 5) 5 მაგალითი -->
+<button id="ex1">Click</button>
+<input id="ex2" placeholder="Type something" />
+<div id="ex3" style="width:100px; height:100px; background:lightgray;"></div>
+<button id="ex4">Double Click</button>
+<input id="ex5" placeholder="Focus me" />
+
+<script>
+// 1) Click
+document.getElementById("ex1").addEventListener("click", () => {
+  console.log("Clicked!");
+});
+
+// 2) Input
+document.getElementById("ex2").addEventListener("input", (event) => {
+  console.log("Input value:", event.target.value);
+});
+
+// 3) Mouseover
+document.getElementById("ex3").addEventListener("mouseover", () => {
+  console.log("Mouse is over the box");
+});
+
+// 4) Double Click
+document.getElementById("ex4").addEventListener("dblclick", () => {
+  console.log("Double clicked!");
+});
+
+// 5) Focus
+document.getElementById("ex5").addEventListener("focus", () => {
+  console.log("Input focused");
+});
+</script>
+
+</body>
+</html>

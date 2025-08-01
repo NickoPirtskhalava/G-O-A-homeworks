@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8" />
+  <title>document</title>
+</head>
+<body>
+
+<!-- // 1) Hello {name}! -->
+<button id="helloBtn">Say Hello</button>
+
+<script>
+let myName = "Nicko";
+document.getElementById("helloBtn").addEventListener("click", () => {
+  console.log(`Hello ${myName}!`);
+});
+</script>
+
+<!-- // 2) სკოუპების ახსნა -->
+<!-- 
+Global scope – ცვლადი ხელმისაწვდომია ყველგან
+Local scope – ცვლადი ფუნქციის შიგნით
+Block scope – ცვლადი ბლოკის შიგნით (if, for)
+-->
+
+<script>
+let globalVar = "Global";
+
+function showLocal() {
+  let localVar = "Local";
+  console.log(localVar);
+}
+
+if (true) {
+  let blockVar = "Block";
+  console.log(blockVar);
+}
+</script>
+
+<!-- // 3) ღილაკზე დაკლიკება და num +2 -->
+<button id="addBtn">+2</button>
+
+<script>
+let num = 0;
+document.getElementById("addBtn").addEventListener("click", () => {
+  num += 2;
+  console.log(num);
+});
+</script>
+
+<!-- // 4) სარეგისტრაციო ფორმა -->
+<form id="finalForm">
+  <input id="infoInput" />
+  <input type="submit" id="finalSubmit" />
+</form>
+
+<script>
+document.getElementById("finalSubmit").addEventListener("click", (e) => {
+  e.preventDefault();
+  alert("Registration completed successfully.");
+});
+</script>
+
+</body>
+</html>

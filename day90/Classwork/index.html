@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8" />
+  <title>insta copy</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #fafafa;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+    #classForm {
+      background: white;
+      padding: 20px;
+      border: 1px solid #ccc;
+      width: 300px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    input {
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+    button {
+      padding: 10px;
+      background: #3897f0;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<h2>instagram</h2>
+
+<form id="classForm">
+  <input id="className" placeholder="სახელი" />
+  <input id="classPass" placeholder="პაროლი" type="password" />
+  <button type="submit">დარეგისტრირდი</button>
+</form>
+
+<script>
+document.getElementById("classForm").addEventListener("submit", (e) => {
+  e.preventDefault();
+  let name = document.getElementById("className").value;
+  let pass = document.getElementById("classPass").value;
+  console.log("სახელი:", name);
+  console.log("პაროლი:", pass);
+});
+</script>
+
+</body>
+</html>
