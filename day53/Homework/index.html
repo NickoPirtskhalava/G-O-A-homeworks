@@ -1,0 +1,85 @@
+<!-- 1 -->
+<div class="holiday-container">
+  <img src="newyear.jpg" alt="New Year's Celebration" />
+  <p>ახალი წლის ღამე სავსე ტრადიციებით, ფეერვერკით და ოჯახური სითბოთი.</p>
+</div>
+
+<!-- 2 -->
+<div class="wide-div">Example Content</div>
+
+<!-- 3 -->
+<!-- რესპონსივი (Responsive Web Design) ნიშნავს დიზაინის შექმნას ისე, რომ ვებგვერდი ადაპტირდეს სხვადასხვა ეკრანის ზომებთან: კომპიუტერი, ტაბლეტი, ტელეფონი და ა.შ. იგი გამოიყენება მომხმარებლის უკეთესი გამოცდილებისთვის და საიტის ფუნქციონალის შენარჩუნებისთვის ყველა მოწყობილობაზე. -->
+
+<!-- 4 -->
+<div class="custom-site">
+  <h2>ჩემი საყვარელი წიგნები</h2>
+  <ul>
+    <li>1984 — George Orwell</li>
+    <li>The Alchemist — Paulo Coelho</li>
+    <li>Harry Potter — J.K. Rowling</li>
+  </ul>
+</div>
+
+<style>
+  .holiday-container {
+    width: 50%;
+    margin: auto;
+  }
+
+  .holiday-container img {
+    width: 100%;
+  }
+
+  .holiday-container p {
+    font-size: 16px;
+  }
+
+  .wide-div {
+    width: 80%;
+    margin: auto;
+    background-color: lightgray;
+  }
+
+  .custom-site {
+    width: 80%;
+    margin: auto;
+  }
+
+  @media screen and (max-width: 1024px) {
+    .wide-div {
+      width: 40%;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .holiday-container img {
+      width: 80%;
+    }
+
+    .holiday-container p {
+      font-size: 14px;
+    }
+
+    .wide-div {
+      width: 20%;
+    }
+
+    .custom-site {
+      width: 40%;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .holiday-container img {
+      width: 60%;
+    }
+
+    .holiday-container p {
+      font-size: 12px;
+    }
+
+    .wide-div {
+      width: 10%;
+    }
+  }
+</style>

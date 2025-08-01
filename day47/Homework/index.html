@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container row">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+    </div>
+
+    <div class="container column">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+    </div>
+
+    <div class="container row-reverse">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+    </div>
+
+    <div class="container column-reverse">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+    </div>
+
+
+<style>
+    .container {
+        border: 1px solid black;
+        width: 200px;
+        height: 200px;
+        display: flex;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+
+    .row {
+        flex-direction: row;
+    }
+
+    .column {
+        flex-direction: column;
+    }
+
+    .row-reverse {
+        flex-direction: row-reverse;
+    }
+
+    .column-reverse {
+        flex-direction: column-reverse;
+    }
+
+    .box {
+        background-color: red;
+        color: white;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+        font-weight: bold;
+    }
+</style>
+
+</body>
+</html>

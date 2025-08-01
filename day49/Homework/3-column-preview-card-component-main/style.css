@@ -1,0 +1,103 @@
+:root {
+  --sedan: hsl(31, 77%, 52%);
+  --suv: hsl(184, 100%, 22%);
+  --luxury: hsl(179, 100%, 13%);
+  --white: hsl(0, 0%, 95%);
+  --gray: hsl(0, 0%, 93%);
+  --font-body: 'Lexend Deca', sans-serif;
+  --font-heading: 'Big Shoulders Display', cursive;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  max-width: 920px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 2rem;
+}
+
+.card {
+  flex: 1;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: var(--white);
+}
+
+.card img {
+  width: 64px;
+  margin-bottom: 2rem;
+}
+
+.card h2 {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
+.card p {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  opacity: 0.75;
+}
+
+.btn {
+  text-decoration: none;
+  background-color: var(--white);
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  font-size: 0.875rem;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  align-self: flex-start;
+}
+
+.btn:hover {
+  background-color: transparent;
+  color: var(--white);
+  border: 2px solid var(--white);
+}
+
+.btn-sedan {
+  color: var(--sedan);
+}
+.btn-suv {
+  color: var(--suv);
+}
+.btn-luxury {
+  color: var(--luxury);
+}
+
+.sedan {
+  background-color: var(--sedan);
+}
+.suv {
+  background-color: var(--suv);
+}
+.luxury {
+  background-color: var(--luxury);
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+}

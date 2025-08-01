@@ -1,0 +1,42 @@
+<!-- 1 -->
+<!-- რესპონსივი გამოიყენება იმისათვის, რომ ვებგვერდი მოწყობილობის ეკრანის ზომას მოერგოს. -->
+
+<!-- 2 -->
+<!DOCTYPE html>
+<html lang="ka">
+  <head>
+    <meta charset="UTF-8" />
+    <title>BMW M3</title>
+    <style>
+      .car-container {
+        width: 75%;
+        margin: auto;
+      }
+
+      @media screen and (max-width: 1024px) {
+        .car-container {
+          width: 60%;
+        }
+      }
+
+      @media screen and (max-width: 768px) {
+        .car-container {
+          width: 45%;
+        }
+      }
+
+      @media screen and (max-width: 480px) {
+        .car-container {
+          width: 30%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="car-container">
+      <h2>BMW M3</h2>
+      <img src="bmw.jpg" alt="BMW M3" />
+      <p>ძლიერი, ელეგანტური და სწრაფი სპორტული მანქანა.</p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,76 @@
+<!-- 1) -->
+<form id="registerForm">
+  <input type="email" id="email" />
+  <input type="password" id="password" />
+  <input type="submit" id="submitBtn" />
+</form>
+
+<script>
+// 1)
+document.getElementById("submitBtn").addEventListener("click", function (e) {
+  e.preventDefault();
+  let email = document.getElementById("email").value;
+  let password = document.getElementById("password").value;
+  console.log(email, password);
+});
+</script>
+
+<!-- 2) -->
+<button id="greetBtn">Say Hello</button>
+
+<script>
+// 2)
+let name = "Nicko";
+document.getElementById("greetBtn").addEventListener("click", function () {
+  console.log(`Hello ${name}!`);
+});
+</script>
+
+<!-- 3) -->
+<!-- 
+// 3) Scope explanation:
+Global scope: declared outside any function or block
+Local scope: declared inside a function
+Block scope: declared inside a block (e.g., if, for)
+
+Examples:
+-->
+<script>
+let globalScope = "Global";
+
+function testLocal() {
+  let localScope = "Local";
+  console.log(localScope);
+}
+
+if (true) {
+  let blockScope = "Block";
+  console.log(blockScope);
+}
+</script>
+
+<!-- 4) -->
+<button id="incrementBtn">Add 2</button>
+
+<script>
+// 4)
+let num = 0;
+document.getElementById("incrementBtn").addEventListener("click", function () {
+  num += 2;
+  console.log(num);
+});
+</script>
+
+<!-- 5) -->
+<form id="customForm">
+  <input type="text" id="username" />
+  <input type="submit" id="customSubmit" />
+</form>
+
+<script>
+// 5)
+document.getElementById("customSubmit").addEventListener("click", function (e) {
+  e.preventDefault();
+  alert("Registration completed successfully.");
+});
+</script>

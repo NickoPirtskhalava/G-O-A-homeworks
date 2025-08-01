@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Level 66 Homework</title>
+  <style>
+    img {
+      cursor: pointer;
+      width: 150px;
+      border: 2px solid #333;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 1) "document" ობიექტი წარმოადგენს მთლიან ვებგვერდს. ის JavaScript-იდან წვდომის საშუალებას იძლევა HTML სტრუქტურაზე და იძლევა მანიპულაციის საშუალებას. -->
+
+  <!-- 2) "let" არის ცვლადი რომელიც შეიძლება შემდეგ შეიცვალოს. "const" ქმნის ცვლადს რომლის შეცვლა აღარ შეიძლება. -->
+  <script>
+    let points = 10;
+    points = 15;
+
+    const name = "Nicko";
+    // name = "Alex"; // შეცდომა
+
+    // 3) ცვლადი რომლის მნიშვნელობა იცვლება
+    let color = "red";
+    color = "blue";
+
+    // 5) დაკლიკებაზე alert
+    function showAlert() {
+      alert("Do not touch!");
+    }
+  </script>
+
+  <!-- 4)
+       Number, String, Boolean, Undefined, Null -->
+
+  <h2>Don't Touch This Image</h2>
+  <img src="https://via.placeholder.com/150" alt="Warning Image" onclick="showAlert()">
+
+</body>
+</html>

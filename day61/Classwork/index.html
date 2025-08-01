@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Grid Layout Without grid-column</title>
+  <style>
+    body {
+      margin: 0;
+      background: #2c2c2c;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .boxes {
+      display: grid;
+      grid-template-columns: repeat(4, 100px);
+      grid-template-rows: repeat(3, 100px);
+      gap: 10px;
+      background: #fff;
+      padding: 20px;
+      grid-template-areas:
+        "box1 box1 box2 box2"
+        "box3 box3 box2 box2"
+        "box4 box5 box5 box5";
+    }
+
+    .box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    .box1 { grid-area: box1; background: #00c8ff; }
+    .box2 { grid-area: box2; background: #ff00b8; }
+    .box3 { grid-area: box3; background: #ffd800; color: #222; }
+    .box4 { grid-area: box4; background: #00d96d; }
+    .box5 { grid-area: box5; background: #ff7c00; }
+  </style>
+</head>
+<body>
+
+  <div class="boxes">
+    <div class="box box1">1</div>
+    <div class="box box2">2</div>
+    <div class="box box3">3</div>
+    <div class="box box4">4</div>
+    <div class="box box5">5</div>
+  </div>
+
+</body>
+</html>
